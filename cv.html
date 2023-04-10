@@ -1,6 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Slab|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
@@ -193,19 +194,19 @@ License: none (public domain)
         }
 
         main > section {
-            margin-bottom: 30px;
-        }
-
-        article:last-child section {
-            margin-bottom: 0;
+            margin-bottom: 25px;
         }
 
         article {
-            line-height: 1.3em;
+            line-height: 1.5em;
         }
 
         article p {
             margin-bottom: 12px;
+        }
+
+        section:last-child {
+            padding-bottom: 20px;
         }
 
         ul {
@@ -214,11 +215,13 @@ License: none (public domain)
 
         .flex-ul {
             display: flex;
-            justify-content: space-between;
+            /*justify-content: space-between;*/
+            justify-content: space-around;
         }
 
         article.content {
             break-inside: avoid;
+            margin-bottom: 20px;
         }
 
         article.content--flex {
@@ -234,6 +237,7 @@ License: none (public domain)
             text-decoration: none;
             font-weight: bold;
             font-family: 'Lato', sans-serif;
+            line-height: 0;
         }
 
         .fab {
@@ -241,14 +245,27 @@ License: none (public domain)
             margin-bottom: -1px;
         }
 
-        @page {
-            padding: 2rem;
+        #skills-block {
+            margin-bottom: 20px;
         }
 
         @media print {
+            @page {
+                size: auto;
+                margin: 10mm;
+            }
+
+            article {
+                line-height: 1.35em;
+            }
+
+            article:last-child section {
+                margin-bottom: 0;
+            }
 
             section:last-child {
                 margin-bottom: 0;
+                padding-bottom: 0;
             }
 
             body {
@@ -304,7 +321,17 @@ License: none (public domain)
             p.placetitle {
                 color: black;
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 12px;
+            }
+
+            p.placedate {
+                color: black;
+                font-size: 10px;
+            }
+
+            p.placestatus {
+                color: black;
+                font-size: 10px;
             }
         }
     </style>
@@ -314,7 +341,7 @@ License: none (public domain)
 <main>
     <h1 class="mb8">Michael <b>Haddon</b></h1>
     <p class="subtext mb8">Infrastructure Engineer • Site Reliability Engineer • Software Engineer</p>
-    <p class="subtext2 mb8">Gouda, The Netherlands</p>
+    <p class="subtext2 mb8">Jersey, Channel Islands</p>
     <p class="subtext3">
         <a href="mailto:recruitment.mhaddon@gmail.com">
             <i class="fas fa-envelope"></i>
@@ -335,9 +362,13 @@ License: none (public domain)
             <i class="fab fa-internet-explorer"></i>
             https://michael.haddon.me
         </a>
+        <span style="padding:0 15px;">|</span>
+        <a href="https://youtube.com/@PolitePixels" target="_blank">
+            <i class="fab fa-youtube"></i>
+            @PolitePixels
+        </a>
     </p>
-    <section>&nbsp;</section>
-
+    <section style="height: 0;">&nbsp;</section>
     <section>
         <h2>
             <span><span class="po">Int</span>roduction</span>
@@ -358,11 +389,14 @@ License: none (public domain)
                 core fundamental issues that DevOps, and therefore I, intend to solve.</p>
             <p>I have a broad range of experiences in different work environments such as the <b>Automotive</b>, <b>Logistical</b>,
                 <b>Fintech</b>, <b>Finance</b>, <b>Hospitality</b>, <b>Software as a Service</b> and <b>Gambling</b> industries.</p>
+            <p>Throughout my professional journey, I have had the opportunity become experienced with <b>Remote Work</b> and have successfully blended
+                <b>Efficient Communication</b> and <b>Teamwork</b> with the perks of flexibility.
+            </p>
             <p>I hope this curriculum vitae is the start of a wonderful and memorable experience for both of us.</p>
         </article>
     </section>
 
-    <section>
+    <section id="skills-block">
         <h2>
             <span><span class="po">Ski</span>lls</span>
             <span class="underline"></span>
@@ -371,9 +405,7 @@ License: none (public domain)
             <ul class="flex-ul">
                 <li>Driving License</li>
                 <li>English (Native)</li>
-                <li>Dutch (A1)</li>
-                <li>IT Experience (12+ years)</li>
-                <li>Dutch Residence Permit (Exp 2025)</li>
+                <li>IT Experience (13+ years)</li>
             </ul>
         </article>
     </section>
@@ -384,35 +416,59 @@ License: none (public domain)
             <span class="underline"></span>
         </h2>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
+                <h3>PolitePixels</h3>
+                <h4>Independent Infrastructure Consultant/Contractor</h4>
+                <ul>
+<!--                    <li>Managing infrastructures for clients in <b>Fintech</b> & <b>Finance</b></li>-->
+                    <li>Specialising in providing <b>Consultancy</b> and <b>Contracting</b> services for <b>Kubernetes</b> systems</li>
+
+                    <li>Providing tools and educational material designed to <b>Simplify The Complexity Of Infrastructure</b></li>
+                    <li>Available at <a href="https://politepixels.io" target="_blank"><b>https://politepixels.io</b></a> and <a href="https://youtube.com/@PolitePixels" target="_blank">https://youtube.com/@PolitePixels</a></li>
+                </ul>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Jersey,<br/>Channel Islands</p>
+                <p class="placedate">Jun. 2023 - Present</p>
+                <p class="placestatus">Remote</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
                 <h3>Haddon Consultancy</h3>
                 <h4>Independent Infrastructure Consultant/Contractor</h4>
                 <ul>
                     <li>Managing infrastructures for clients in <b>Fintech</b> & <b>Finance</b></li>
-                    <li>Specialising in managing <b>Kubernetes</b> systems</li>
-
+                    <li>Specialising in managing <b>Kubernetes</b> for processing <b>BigData</b> systems on <b>AWS</b> and <b>GCloud</b></li>
+                    <li>Engineering automatic ephemeral integration environments for <b>Continuous Integration</b> pipelines</li>
+                    <li>Working with <b>SOC Teams</b> to investigate platform <b>Anomalous Behaviour</b></li>
+                    <li>Collaborating with the design of the future <b>Infrastructure Architectural Landscape</b></li>
+                    <li>Reorganising projects technical documentation, in order to <b>Accelerate Onboarding Processes</b></li>
+                    <li>Modernising of infrastructure from chaotic spaghetti to <b>Structured GitOps</b> repositories</li>
+                    <li>Working in environments with <b>Sensitive Data</b> and <b>Compliance Requirements</b></li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Gouda,<br/>The Netherlands</p>
-                <p class="placedate">May. 2022 - Present</p>
-            </section>
+                <p class="placedate">May. 2022 - May. 2023</p>
+                <p class="placestatus">Hybrid + Remote</p>
+            </aside>
         </article>
 <!--        <article class="content content&#45;&#45;flex">-->
-<!--            <section style="flex-grow:100;">-->
+<!--            <div style="flex-grow:100;">-->
 <!--                <h3>MN-Services <span class="title-subtext">@ Haddon Consultancy</span></h3>-->
 <!--                <h4>Independent Infrastructure Consultant/Contractor</h4>-->
 <!--                <ul>-->
 <!--                    <li>Information Coming Soon...</li>-->
 <!--                </ul>-->
-<!--            </section>-->
-<!--            <section style="text-align: right;">-->
+<!--            </div>-->
+<!--            <div style="text-align: right;">-->
 <!--                <p class="placetitle">The Hague,<br/>The Netherlands</p>-->
 <!--                <p class="placedate">Jun. 2022 - Present</p>-->
-<!--            </section>-->
+<!--            </div>-->
 <!--        </article>-->
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Dyme</h3>
                 <h4>Lead Infrastructure Engineer</h4>
                 <ul>
@@ -428,14 +484,15 @@ License: none (public domain)
                     </li>
                     <li>Maintaining a scalable platform on <b>Google Cloud's Kubernetes Engine</b></li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Amsterdam,<br/>The Netherlands</p>
                 <p class="placedate">Jan. 2021 - Jun. 2022</p>
-            </section>
+                <p class="placestatus">Hybrid + Remote</p>
+            </aside>
         </article>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Portbase</h3>
                 <h4>Senior DevOps Engineer</h4>
                 <ul>
@@ -454,20 +511,21 @@ License: none (public domain)
                     <li>Responsibility for maintaining <b>Highly-Critical Services</b> on <b>AWS</b> and ensuring <b>Availability
                         Goals</b></li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Rotterdam,<br/>The Netherlands</p>
                 <p class="placedate">May. 2019 - Dec. 2020</p>
-            </section>
+                <p class="placestatus">Hybrid</p>
+            </aside>
         </article>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Lunatech Labs</h3>
                 <h4>Consultant Site Reliability/Infrastructure Engineer</h4>
                 <ul>
-                    <li>Supporting a leading player in the <b>Automotive</b> industry</li>
+                    <li>Providing services for a leading player in the German <b>Automotive</b> industry</li>
                     <li>Managing over <b>400 AWS EC2</b> instances across <b>15 Clusters</b></li>
-                    <li>Developing automated deployment solutions with <b>Terraform</b> and <b>Ansible</b></li>
+                    <li>Engineering automated deployment solutions with <b>Terraform</b> and <b>Ansible</b></li>
                     <li>Developing <b>CI/CD</b> pipelines with <b>Jenkins</b>, including automatic <b>Nightly</b> build
                         testing
                     </li>
@@ -478,14 +536,15 @@ License: none (public domain)
                     <li>Coordinating infrastructure support with <b>International</b> clients</li>
                     <li>Supporting highly distributed <b>Big Data</b> processing nodes</li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Rotterdam,<br/>The Netherlands</p>
                 <p class="placedate">Sep. 2017 - Apr. 2019</p>
-            </section>
+                <p class="placestatus">Hybrid + Remote</p>
+            </aside>
         </article>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Twelve40</h3>
                 <h4>Full-Stack Developer</h4>
                 <ul>
@@ -500,14 +559,15 @@ License: none (public domain)
                         <b>Vagrant</b> and <b>Puppet</b></li>
                     <li>Working closely with clients across <b>Three Continents</b></li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Jersey,<br/>Channel Islands</p>
                 <p class="placedate">Sep. 2016 - Aug. 2017</p>
-            </section>
+                <p class="placestatus">On-Site</p>
+            </aside>
         </article>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>The Processor Centre</h3>
                 <h4>Consultant Systems Administrator & Technical Support</h4>
                 <ul>
@@ -519,14 +579,15 @@ License: none (public domain)
                     <li>Providing phone and <b>On-site Technical Support</b></li>
                     <li>Managing <b>Windows</b> and <b>Linux</b> systems</li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Jersey,<br/>Channel Islands</p>
                 <p class="placedate">Mar. 2012 - Aug. 2016</p>
-            </section>
+                <p class="placestatus">On-Site</p>
+            </aside>
         </article>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Freelance</h3>
                 <h4>Website Development</h4>
                 <ul>
@@ -535,12 +596,12 @@ License: none (public domain)
                     <li>Hosting on my own <b>CentOS</b> servers, and later, <b>AWS EC2</b> machines</li>
                     <li>Utilising the <b>LAMP</b> & <b>LEMP</b> stacks</li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Jersey,<br/>Channel Islands</p>
                 <p class="placedate">July. 2010 - Sep. 2014</p>
-                <p class="placestatus">Intermittent</p>
-            </section>
+                <p class="placestatus">Intermittent, Remote</p>
+            </aside>
         </article>
     </section>
     <section>
@@ -549,23 +610,22 @@ License: none (public domain)
             <span class="underline"></span>
         </h2>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Cloud Native Foundation</h3>
                 <h4>Certified Kubernetes Administrator</h4>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Rotterdam,<br/>The Netherlands</p>
                 <p class="placedate">2018</p>
-            </section>
+            </aside>
         </article>
         <article class="content content--flex">
-            <section style="flex-grow:100;">
+            <div style="flex-grow:100;">
                 <h3>Highlands</h3>
                 <h4>BTEC (Business and Technology Education) Diploma</h4>
                 <b>Covered:</b>
                 <ul>
                     <li>Object Orientated Programming in C#</li>
-                    <li>Programming in Flash</li>
                     <li>Software development processes of Scrum, Agile and Waterfall methodologies</li>
                     <li>Server Networking</li>
                     <li>Core understanding of computer operations</li>
@@ -578,36 +638,13 @@ License: none (public domain)
                     <li>COMPTIA A+ Practical Applications: <b>Pass</b></li>
                     <li>COMPTIA Network+: <b>Pass</b></li>
                 </ul>
-            </section>
-            <section style="text-align: right;">
+            </div>
+            <aside style="text-align: right;">
                 <p class="placetitle">Jersey,<br/>Channel Islands</p>
                 <p class="placedate">2009 - 2011</p>
-            </section>
+            </aside>
         </article>
     </section>
-    <section>
-        <h2>
-            <span><span class="po">Pas</span>sion Projects</span>
-            <span class="underline"></span>
-        </h2>
-        <article class="content content--flex">
-            <section style="flex-grow:100;">
-                <h3>PolitePixels</h3>
-<!--                <h4>Lead Engineer</h4>-->
-                <ul>
-                    <li>Providing tools and educational material designed to <b>Simplify The Complexity Of Infrastructure</b></li>
-                    <li>Available at <a href="https://politepixels.io" target="_blank"><b>https://politepixels.io</b></a> and <a href="https://youtube.com/@PolitePixels" target="_blank">https://youtube.com/@PolitePixels</a></li>
-                    <li>Built utilising <b>HTML/CSS/JS</b> & <b>Golang</b></li>
-                </ul>
-            </section>
-            <section style="text-align: right;">
-                <p class="placetitle">Gouda,<br/>The Netherlands</p>
-                <p class="placedate">2022 - Present</p>
-            </section>
-        </article>
-    </section>
-
-    <section>&nbsp;</section>
 </main>
 </body>
 </html>
