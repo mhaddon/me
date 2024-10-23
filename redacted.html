@@ -1,0 +1,721 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Slab|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Senior Infrastructure Engineer</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+    <style>
+        body {
+            background-color: #363636;
+            /*font-family: 'Roboto Slab', serif;*/
+            color: #dadada;
+            font-family: 'Raleway', serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        main {
+            margin: auto;
+            height: 100%;
+            max-width: 860px;
+            padding: 12px;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #ececec;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #ececec;
+            font-size: 24px;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #e2b323;
+            font-size: 18px;
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #ececec;
+            font-size: 14px;
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        h2 .underline {
+            border-bottom: 1px #ececec solid;
+            flex-grow: 100;
+            margin-left: 10px;
+        }
+
+        h1 b {
+            font-weight: 600;
+        }
+
+        p.subtext {
+            font-size: 12px;
+            text-align: center;
+            color: #b57623;
+            font-weight: 400;
+        }
+
+        p.subtext2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            text-align: center;
+            color: #ececec;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        p.subtext3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 10px;
+            text-align: center;
+            font-weight: 300;
+            color: #ececec;
+        }
+
+        p.placetitle {
+            color: #b57623;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        p.placedate {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            text-align: right;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .title-subtext {
+            opacity: 0.85;
+            font-size: 0.75em;
+            margin-left: 5px;
+        }
+
+        p.placestatus {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            text-align: right;
+            font-weight: 400;
+            margin-bottom: 0;
+            opacity: 0.85;
+        }
+
+        .mb8 {
+            margin-bottom: 8px;
+        }
+
+        .po {
+            color: #b57623;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        main > section {
+            margin-bottom: 25px;
+        }
+
+        article {
+            line-height: 1.5em;
+        }
+
+        article p {
+            margin-bottom: 12px;
+        }
+
+        section:last-child {
+            padding-bottom: 20px;
+        }
+
+        ul {
+            list-style: circle inside;
+        }
+
+        .flex-ul {
+            display: flex;
+            /*justify-content: space-between;*/
+            justify-content: space-around;
+        }
+
+        article.content {
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        article.content--flex {
+            display: flex;
+        }
+
+        b {
+            font-weight: 600;
+        }
+
+        a {
+            color: #78c5ec;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            line-height: 0;
+        }
+
+        .fab {
+            padding-right: 2px;
+            margin-bottom: -1px;
+        }
+
+        #skills-block {
+            margin-bottom: 20px;
+        }
+
+        p.technologies {
+            margin: 10px 0 0 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #ececec;
+            font-size: 14px;
+        }
+
+        p.technologies b {
+            color: #e2b323;
+        }
+
+        aside {
+            min-width: 120px;
+        }
+
+        @media print {
+            @page {
+                size: auto;
+                margin: 10mm;
+            }
+
+            article {
+                line-height: 1.35em;
+            }
+
+            article:last-child section {
+                margin-bottom: 0;
+            }
+
+            section:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            body {
+                background: white;
+                color: #0c0c0c;
+                font-size: 10px;
+                font-weight: 300;
+            }
+
+            h1 {
+                color: black;
+                font-size: 30px;
+            }
+
+            h2 {
+                color: #564848;
+                font-size: 18px;
+            }
+
+            h3 {
+                color: #6f570c;
+                font-size: 16px;
+            }
+
+            h4 {
+                color: #3e3e3e;
+                font-size: 12px;
+            }
+
+            p.subtext {
+                color: #483011;
+                font-size: 10px;
+            }
+
+            p.subtext2 {
+                color: #1f1f1f;
+                font-size: 10px;
+            }
+
+            p.subtext3 {
+                color: #1f1f1f;
+                font-size: 10px;
+            }
+
+            a {
+                color: #4588ab;
+            }
+
+            b {
+                color: black;
+            }
+
+            p.placetitle {
+                color: black;
+                font-weight: 600;
+                font-size: 12px;
+            }
+
+            p.placedate {
+                color: black;
+                font-size: 10px;
+            }
+
+            p.placestatus {
+                color: black;
+                font-size: 10px;
+            }
+
+            p.technologies {
+                margin: 10px 0 0 0;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                color: #ececec;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <h1 class="mb8">Senior <b>Infrastructure Engineer</b></h1>
+    <p class="subtext mb8">Infrastructure Engineer • Site Reliability Engineer • Software Engineer</p>
+    <p class="subtext2 mb8">Jersey, Channel Islands</p>
+    <section style="height: 0;">&nbsp;</section>
+    <section>
+        <h2>
+            <span><span class="po">Int</span>roduction</span>
+            <span class="underline"></span>
+        </h2>
+        <article class="content" style="margin-bottom:-5px;">
+            <p>I am an extremely passionate <b>Infrastructure Engineer</b> constantly trying to improve my own skills and
+                learn from new experiences. My favourite way to spend my pastime is to create educational content about <b>Infrastructure</b>, <b>Cloud Architecture</b> and what I call <b>Developer-first Operations</b>, for my website & Youtube.
+            </p>
+            <p>At the moment I have a particular love and fascination over the <b>Kubernetes Ecosystem</b>.</p>
+            <p>My <b>Developer-first</b> philosophy prioritises empowering teams to focus on building and innovating, while seamless infrastructure and automation handle the complexities. I believe that adopting and integrating a strong <b>DevOps</b> culture is vital for companies to drive efficiency, collaboration, and developer productivity.</p>
+            <p>Recently, I have been focusing on helping organisations meet and exceed their requirements with <b>Availability</b>,
+                <b>Maintainability</b>, <b>Observability</b> and <b>Speed of Development</b>. Which I believe are the
+                core fundamental issues that DevOps, and therefore I, intend to solve.</p>
+            <p>I have a broad range of experiences in different work environments such as the <b>Automotive</b>, <b>Logistical</b>,
+                <b>Fintech</b>, <b>Finance</b>, <b>Hospitality</b>, <b>Software as a Service</b> and <b>Gambling</b> industries.</p>
+            <p>Throughout my professional journey, I have had the opportunity become experienced with <b>Remote Work</b> and have successfully blended
+                <b>Efficient Communication</b> and <b>Teamwork</b> with the perks of flexibility.
+            </p>
+            <p>I hope this curriculum vitae is the start of a wonderful and memorable experience for both of us.</p>
+        </article>
+    </section>
+
+    <section id="skills-block">
+        <h2>
+            <span><span class="po">Ski</span>lls</span>
+            <span class="underline"></span>
+        </h2>
+        <article class="content" style="margin-bottom:-5px;">
+            <ul class="flex-ul">
+                <li>Driving License</li>
+                <li>English (Native)</li>
+                <li>IT Experience (13+ years)</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>
+            <span><span class="po">Exp</span>erience</span>
+            <span class="underline"></span>
+        </h2>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Current Employment <span style="font-size: 0.65em; margin-left: 10px; transform: translateY(2px); color: gray; font-style: italic; letter-spacing: 1px;">redacted</span></h3>
+                <h4>Director & Infrastructure Consultant/Contractor</h4>
+                <ul>
+                    <li>Managing infrastructures for clients in <b>Fintech</b>, <b>Finance</b>, <b>SAAS</b> & <b>Logistics</b></li>
+                    <li>Pursuing a focus for <b>Developer Experience</b> with strong CI-CD and infrastructure solutions</li>
+                    <li>Providing tools and educational material designed to <b>Simplify The Complexity Of Infrastructure</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> AWS, Baremetal, BigQuery, GCloud, Golang, Kubernetes, Parquet, Proxmox, Tailscale
+                    <br/>
+                    <b>Responsibilities: </b> Architecture Design, Engineering, On-call support
+                    <br/>
+                    <b>Highlight: </b> Achieved a 0% release error rate by implementing thorough testing throughout the build process.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Jersey,<br/>Channel Islands</p>
+                <p class="placedate">Apr. 2023 - Present</p>
+                <p class="placestatus">Remote</p>
+            </aside>
+        </article>
+        <article class="content content--flex" style="padding-left: 25px; border-left: 1px solid #e2b323; padding-bottom: 15px;">
+            <div style="flex-grow:100;">
+                <h3>MN Services</h3>
+                <h4>Senior Infrastructure Consultant/Contractor</h4>
+                <ul>
+                    <li>Lead investigation to produce readiness assessment reports to ensure program <b>Operational Readiness</b></li>
+                    <li>Aiding in planning the transition from development to a <b>Production-Ready</b> project</li>
+                    <li>Restructured and greatly expanded project documentation to enable a <b>Seamless Handover</b></li>
+                    <li>Engineered outbound datalake solution, focused on <b>Security</b>, <b>Performance</b> and <b>Cost Efficiency</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> Apache Kyuubi, AWS Athena, AWS Lakeformation, FluxCD (GitOps), Kubernetes, Parquet, Terraform
+                    <br/>
+                    <b>Responsibilities: </b> Engineering, Operational Readiness
+                    <br/>
+                    <b>Highlight: </b> Teamed-up to drastically reduce project vulnerabilities, cutting them down from thousands to negligible figures, while also ensuring that new releases consistently met the high standards required for production environments.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placedate">May. 2022 - Dec. 2023</p>
+                <p class="placestatus">Remote</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Haddon Consultancy</h3>
+                <h4>Independent Infrastructure Consultant/Contractor</h4>
+                <ul>
+                    <li>Managing infrastructures for clients in <b>Fintech</b>, <b>Finance</b> & <b>Logistics</b></li>
+                    <li>Specialising in managing <b>Kubernetes</b> for processing <b>BigData</b> systems on <b>AWS</b> and <b>GCloud</b></li>
+                    <li>Engineering automatic ephemeral integration environments for <b>Continuous Integration</b> pipelines</li>
+                    <li>Coordinating with <b>SOC Teams</b> to investigate platform <b>Anomalous Behaviour</b></li>
+                    <li>Collaborating with the design of the future <b>Infrastructure Architectural Landscape</b></li>
+                    <li>Reorganising projects technical documentation, in order to <b>Accelerate Onboarding Processes</b></li>
+                    <li>Modernising of infrastructure from chaotic spaghetti to <b>Structured GitOps</b> repositories</li>
+                    <li>Working in environments with <b>Sensitive Data</b> and <b>Compliance Requirements</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> ArgoCD (GitOps), Kafka, Kubernetes, Terraform
+                    <br/>
+                    <b>Responsibilities: </b> Architecture Design, Budgeting, Engineering, On-call support
+                    <br/>
+                    <b>Highlight: </b> Successfully decreased clients' cloud spending by 65% through the strategic implementation of more efficient technologies and effective management of application configuration and resource allocation.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Gouda,<br/>The Netherlands</p>
+                <p class="placedate">May. 2022 - May. 2023</p>
+                <p class="placestatus">Hybrid + Remote</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Dyme</h3>
+                <h4>Lead Infrastructure Engineer</h4>
+                <ul>
+                    <li>Supporting a rapidly accelerating & expanding <b>Fintech</b> <b>Startup</b></li>
+                    <li>Architecturing new infrastructure landscape utilising <b>GitOps</b>, <b>Service Meshes</b> and
+                        <b>Kubernetes</b></li>
+                    <li>Re-engineering platform infrastructure from scratch utilising <b>Open Source</b> technologies
+                    </li>
+                    <li>Building <b>Continuous Load Testing Solutions</b> to ensure stability during traffic spikes</li>
+                    <li>Encouraging and supporting an environment which promotes <b>Developer Responsibility</b></li>
+                    <li>Investigating and assessing future infrastructure requirements based on the organisational
+                        goals
+                    </li>
+                    <li>Maintaining a scalable platform on <b>Google Cloud's Kubernetes Engine</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> ArgoCD (GitOps), AWS, GCloud, Istio, Kubernetes, Terraform
+                    <br/>
+                    <b>Responsibilities: </b> Architecture Design, Engineering, On-call support, Operational Maturity
+                    <br/>
+                    <b>Highlight: </b> Recruited in response to challenges in achieving reliability targets aligned with product growth, I led a complete overhaul of the platform, successfully ensuring an availability uptime of 99.9%, while providing for a drastic increase of concurrent usage.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Amsterdam,<br/>The Netherlands</p>
+                <p class="placedate">Jan. 2021 - Jun. 2022</p>
+                <p class="placestatus">Hybrid + Remote</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Portbase</h3>
+                <h4>Senior DevOps Engineer</h4>
+                <ul>
+                    <li>Maintaining the core <b>Logistical Tech-Stack</b> for the Dutch ports</li>
+                    <li>Architecting & engineering solutions for organisational <b>CloudNative Adoption</b> and
+                        transition
+                    </li>
+                    <li>Assessing <b>Operational Maturity</b> against the organisational goals</li>
+                    <li>Developing roadmaps for <b>Observability</b>, <b>Stability</b> and <b>Scalability</b></li>
+                    <li>Integrating modern release strategies, such as <b>Canary</b> releases</li>
+                    <li>Organising and leading <b>Training Workshops</b> to coach the personal development of other
+                        engineers
+                    </li>
+                    <li>Leading an investigation and project into the integration of <b>Kubernetes</b>, <b>Service
+                        Meshes</b> & <b>Gitops</b></li>
+                    <li>Responsibility for maintaining <b>Highly-Critical Services</b> on <b>AWS</b> and ensuring <b>Availability
+                        Goals</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> AWS, Istio, Java, Kubernetes, AWS Lambda, Oracle, Terraform
+                    <br/>
+                    <b>Responsibilities: </b> Architectural Design, Engineering, On-call support, Operational Maturity
+                    <br/>
+                    <b>Highlight: </b> Following a challenging shift from third-party managed infrastructure to self-managed AWS, I led the initiative to significantly improve system reliability, reducing the mean time between incidents from daily occurrences to just once every few months.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Rotterdam,<br/>The Netherlands</p>
+                <p class="placedate">May. 2019 - Dec. 2020</p>
+                <p class="placestatus">Hybrid</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Lunatech Labs</h3>
+                <h4>Consultant Site Reliability/Infrastructure Engineer</h4>
+                <ul>
+                    <li>Providing services for a leading player in the German <b>Automotive</b> industry</li>
+                    <li>Hosting Internal <b>Workshops</b> for inter-project knowledge sharing</li>
+                    <li>Collaborating closely with <b>International</b> teams remotely and in-person</li>
+                    <li>Coordinating infrastructure support with <b>International</b> clients</li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> Scala, Java, DC/OS, Kubernetes, Javascript
+                    <br/>
+                    <b>Responsibilities: </b> Client Engagement, Onboarding, Training
+                    <br/>
+                    <b>Highlight: </b> Streamlined the engineer onboarding process for projects by implementing comprehensive training, significantly cutting down the time required to bring new team members up to speed.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Rotterdam,<br/>The Netherlands</p>
+                <p class="placedate">Sep. 2017 - Apr. 2019</p>
+                <p class="placestatus">Hybrid</p>
+            </aside>
+        </article>
+        <article class="content content--flex" style="padding-left: 25px; border-left: 1px solid #e2b323; padding-bottom: 15px;">
+            <div style="flex-grow:100;">
+                <h3>Audi Electronics Venture</h3>
+                <h4>Consultant Site Reliability/Infrastructure Engineer</h4>
+                <ul>
+                    <li>Managing over <b>400 AWS EC2</b> instances across <b>15 Clusters</b></li>
+                    <li>Engineering automated deployment solutions with <b>Terraform</b> and <b>Ansible</b></li>
+                    <li>Developing <b>CI/CD</b> pipelines with <b>Jenkins</b>, including automatic <b>Nightly</b> build
+                        testing
+                    </li>
+                    <li>Orchestrating <b>Docker</b> and <b>UCR</b> containers with <b>DC/OS</b> and <b>Kubernetes</b>
+                    </li>
+                    <li>Supporting highly distributed <b>Big Data</b> processing nodes</li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> Ansible, AWS, Datastax (Cassandra), Docker, DC/OS, Jenkins, Kafka, Kubernetes, Mesos, UCR
+                    <br/>
+                    <b>Responsibilities: </b> Engineering, On-call support, Client Engagement
+                    <br/>
+                    <b>Highlight: </b> Drastically reduced the complexity of our CI/CD system, so-much-so, that the average CI/CD ticket complexity dropped by half.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placedate">Sep. 2017 - Apr. 2019</p>
+                <p class="placestatus">Remote</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Twelve40</h3>
+                <h4>Full-Stack Developer</h4>
+                <ul>
+                    <li>Engineering core services for an international <b>Gambling</b> platform</li>
+                    <li>Maintaining and developing a <b>PHP</b> website using the <b>Silverstripe</b> framework</li>
+                    <li>Leading <b>Javascript</b> frontend transition and rewrite from <b>ECMAScript 5</b> to <b>ECMAScript
+                        6</b></li>
+                    <li>Leading modernisation of <b>CSS</b> architecture to <b>SCSS</b></li>
+                    <li>Developing <b>Java</b> tools for <b>Continuous Production Compliance Testing</b></li>
+                    <li>Creating, configurating, nurturing, and later automating, <b>LAMP</b> staging servers</li>
+                    <li>Automating creation and configuration of <b>Local Development Environments</b> with
+                        <b>Vagrant</b> and <b>Puppet</b></li>
+                    <li>Working closely with clients across <b>Three Continents</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> Apache, Java, Javascript, Linux, MySQL, PHP, Puppet, SCSS, Vagrant, Virtual Machines
+                    <br/>
+                    <b>Responsibilities: </b> Engineering
+                    <br/>
+                    <b>Highlight: </b> Enhanced our system's testing efficiency by dramatically decreasing the time required to establish test environments, from several weeks to mere minutes, thereby boosting our ability to conduct reliable testing swiftly.
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Jersey,<br/>Channel Islands</p>
+                <p class="placedate">Sep. 2016 - Aug. 2017</p>
+                <p class="placestatus">On-Site</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>The Processor Centre</h3>
+                <h4>Consultant Systems Administrator & Technical Support</h4>
+                <ul>
+                    <li>Maintaining the IT infrastructure of <b>30+</b> local companies</li>
+                    <li>Working with companies in <b>Many Industries</b>, notably hospitality and finance</li>
+                    <li>Organising continuous <b>Disaster Recovery Testing</b> of highly critical and confidential data
+                    </li>
+                    <li>Configuring <b>Firewalls</b>, <b>Routers</b> and <b>High Resilience</b> servers</li>
+                    <li>Providing phone and <b>On-site Technical Support</b></li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> Linux, Virtual Machines, Windows Server, Windows, Sophos, VMWare
+                    <br/>
+                    <b>Responsibilities: </b> On-call support, Client Engagement
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Jersey,<br/>Channel Islands</p>
+                <p class="placedate">Mar. 2012 - Aug. 2016</p>
+                <p class="placestatus">On-Site</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Freelance</h3>
+                <h4>Website Development</h4>
+                <ul>
+                    <li>Working with small clients in the local hospitality, education and music industries</li>
+                    <li>Creating bespoke websites with integrated <b>Content Management Systems</b></li>
+                    <li>Hosting on my own <b>CentOS</b> servers, and later, <b>AWS EC2</b> machines</li>
+                </ul>
+                <p class="technologies">
+                    <b>Technologies: </b> Apache, AWS EC2, Javascript, Linux, MySQL, Nginx, PHP, CSS, Virtual Machines
+                    <br/>
+                    <b>Responsibilities: </b> Client Engagement, Engineering, On-call support, Product Management
+                </p>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Jersey,<br/>Channel Islands</p>
+                <p class="placedate">July. 2010 - Sep. 2014</p>
+                <p class="placestatus">Intermittent, Remote</p>
+            </aside>
+        </article>
+    </section>
+    <section>
+        <h2>
+            <span><span class="po">Edu</span>cation</span>
+            <span class="underline"></span>
+        </h2>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Cloud Native Foundation</h3>
+                <h4>Certified Kubernetes Administrator</h4>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Rotterdam,<br/>The Netherlands</p>
+                <p class="placedate">2018</p>
+            </aside>
+        </article>
+        <article class="content content--flex">
+            <div style="flex-grow:100;">
+                <h3>Highlands</h3>
+                <h4>BTEC (Business and Technology Education) Diploma</h4>
+                <b>Covered:</b>
+                <ul>
+                    <li>Object Orientated Programming in C#</li>
+                    <li>Software development processes of Scrum, Agile and Waterfall methodologies</li>
+                    <li>Server Networking</li>
+                    <li>Core understanding of computer operations</li>
+                </ul>
+                <br/>
+                <b>Results:</b>
+                <ul>
+                    <li>BTEC National Diploma for IT Practitioners: <b>Triple Distinction</b></li>
+                    <li>COMPTIA A+ Essential Support Skills: <b>Pass</b></li>
+                    <li>COMPTIA A+ Practical Applications: <b>Pass</b></li>
+                    <li>COMPTIA Network+: <b>Pass</b></li>
+                </ul>
+            </div>
+            <aside style="text-align: right;">
+                <p class="placetitle">Jersey,<br/>Channel Islands</p>
+                <p class="placedate">2009 - 2011</p>
+            </aside>
+        </article>
+    </section>
+</main>
+</body>
+</html>
